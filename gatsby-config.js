@@ -7,6 +7,7 @@ module.exports = {
 		wordPressUrl: `https://dev-wwfsg.pantheonsite.io`,
 	},
 	plugins: [
+
 		// Setup WPGraphQL.com to be the source
 		`gatsby-plugin-netlify`,
 		{
@@ -21,13 +22,13 @@ module.exports = {
 			},
 		},
 		`gatsby-plugin-react-helmet-async`,
-		{
-			resolve: `gatsby-source-filesystem`,
-			options: {
-				name: `images`,
-				path: `${__dirname}/src/images`,
-			},
-		},
+		// {
+		// 	resolve: `gatsby-source-filesystem`,
+		// 	options: {
+		// 		name: `images`,
+		// 		path: `${__dirname}/src/images`,
+		// 	},
+		// },
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
 		{
