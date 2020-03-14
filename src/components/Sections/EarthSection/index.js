@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image"
 import EarthSectionStyles from "./style.module.scss"
+import downArrowImg from "../../../images/down-arrow.png"
 
 export const query = graphql`
 
@@ -69,8 +70,8 @@ const EarthSection = () => {
               >
                 <img
                   className={`${EarthSectionStyles.icon}`}
-                  src="images/down-arrow.png"
-                  alt="down-arrow"
+									src={downArrowImg}
+									alt="down-arrow"
                 />
               </a>
             </div>
