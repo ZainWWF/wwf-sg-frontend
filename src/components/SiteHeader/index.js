@@ -1,6 +1,7 @@
 import React from "react"
 import Search from "./Search"
 import HeaderMenu from "./HeaderMenu"
+import wwfLogo from "../../images/wwf-sg-logo.png"
 
 import SHstyle from "./style.module.scss"
 
@@ -18,8 +19,8 @@ const SiteHeader = () => {
 					>
 						<img
 							className={`site-logo ${SHstyle.siteLogo}`}
-							src="/images/wwf-sg-logo.png"
-							alt=""
+							src={wwfLogo}
+							alt="World Wide Fund Logo"
 							style={{ maxWidth: "80px" }}
 						/>
 					</a>
