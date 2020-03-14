@@ -5,6 +5,7 @@
  */
 
 // You can delete this file if you're not using it
+import "./src/fonts/fonts.css"
 import "./src/styles/global.scss"
 import "jquery/dist/jquery.slim.min.js"
 // import "@popperjs/core/dist/esm/popper"
