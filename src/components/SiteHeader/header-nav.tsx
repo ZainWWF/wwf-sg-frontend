@@ -40,9 +40,9 @@ export default function () {
 			</StyledLink>
 			<StyledLink
 				className="btn btn-outline-secondary btn-sm"
-				to="https://donate.wwf.sg/">
+				to="/">
 				DONATE
-					</StyledLink>
+			</StyledLink>
 			<StyledButton
 				className="navbar-toggler"
 				type="button"

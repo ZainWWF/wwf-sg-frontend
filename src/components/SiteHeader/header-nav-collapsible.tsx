@@ -53,7 +53,7 @@ export default function () {
 				<li className="nav-item nav-button ml-2 pt-2">
 					<Link
 						className="btn btn-outline-secondary"
-						to="https://donate.wwf.sg/">
+						to="/">
 						DONATE
 					</Link>
 				</li>
