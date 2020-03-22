@@ -5,115 +5,140 @@
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
   Referrer-Policy: same-origin
-/component---node-modules-gatsby-plugin-offline-app-shell-js-bb5433fc5c978771af2b.js
+/component---cache-caches-gatsby-plugin-offline-app-shell-js-2ff006ca365609437d6c.js
   Cache-Control: public, max-age=31536000, immutable
-/component---src-templates-post-js-1fe8cdad5af83f4cf863.js
+/component---src-templates-post-js-a058b0a00198a57a2562.js
   Cache-Control: public, max-age=31536000, immutable
-/styles.142aaa5baf38403963f5.css
+/commons-414ab4404d05d802e15c.js
   Cache-Control: public, max-age=31536000, immutable
-/styles-2d0a22bd4da087a53e55.js
+/component---src-pages-404-tsx-bd1932b35c1d7ed26571.js
   Cache-Control: public, max-age=31536000, immutable
-/commons-801faf18017b1afaf73c.js
+/component---src-pages-index-tsx-1960010fe9bb15efa4da.js
   Cache-Control: public, max-age=31536000, immutable
-/component---src-pages-404-js-de5284666524cb5798f1.js
+/webpack-runtime-ca27ddf9f92f9a21d84a.js
   Cache-Control: public, max-age=31536000, immutable
-/component---src-pages-index-js-ff5af21367c35db4a469.js
+/styles.bfb30b33f4aedaa4824c.css
   Cache-Control: public, max-age=31536000, immutable
-/webpack-runtime-65899f1616f8bb483e01.js
+/styles-9cebf7739e57f002ca8b.js
   Cache-Control: public, max-age=31536000, immutable
-/app-3e11c7ba20bb4745fc7f.js
+/app-9ee95e6f8f5760e9e2e9.js
   Cache-Control: public, max-age=31536000, immutable
 /static/*
   Cache-Control: public, max-age=31536000, immutable
 /sw.js
   Cache-Control: no-cache
 /wwf-sg-frontend/offline-plugin-app-shell-fallback/
-  Link: </wwf-sg-frontend/webpack-runtime-65899f1616f8bb483e01.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/styles-2d0a22bd4da087a53e55.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/commons-801faf18017b1afaf73c.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/app-3e11c7ba20bb4745fc7f.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/component---node-modules-gatsby-plugin-offline-app-shell-js-bb5433fc5c978771af2b.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/webpack-runtime-ca27ddf9f92f9a21d84a.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/styles-9cebf7739e57f002ca8b.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/commons-414ab4404d05d802e15c.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/app-9ee95e6f8f5760e9e2e9.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/component---cache-caches-gatsby-plugin-offline-app-shell-js-2ff006ca365609437d6c.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </wwf-sg-frontend/page-data/offline-plugin-app-shell-fallback/page-data.json>; rel=preload; as=fetch; crossorigin
 /wwf-sg-frontend/blog/test/
-  Link: </wwf-sg-frontend/webpack-runtime-65899f1616f8bb483e01.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/styles-2d0a22bd4da087a53e55.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/commons-801faf18017b1afaf73c.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/app-3e11c7ba20bb4745fc7f.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/component---src-templates-post-js-1fe8cdad5af83f4cf863.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/webpack-runtime-ca27ddf9f92f9a21d84a.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/styles-9cebf7739e57f002ca8b.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/commons-414ab4404d05d802e15c.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/app-9ee95e6f8f5760e9e2e9.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/component---src-templates-post-js-a058b0a00198a57a2562.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </wwf-sg-frontend/page-data/blog/test/page-data.json>; rel=preload; as=fetch; crossorigin
 /wwf-sg-frontend/blog/australia-fires-environment-fires-wwf/
-  Link: </wwf-sg-frontend/webpack-runtime-65899f1616f8bb483e01.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/styles-2d0a22bd4da087a53e55.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/commons-801faf18017b1afaf73c.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/app-3e11c7ba20bb4745fc7f.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/component---src-templates-post-js-1fe8cdad5af83f4cf863.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/webpack-runtime-ca27ddf9f92f9a21d84a.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/styles-9cebf7739e57f002ca8b.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/commons-414ab4404d05d802e15c.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/app-9ee95e6f8f5760e9e2e9.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/component---src-templates-post-js-a058b0a00198a57a2562.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </wwf-sg-frontend/page-data/blog/australia-fires-environment-fires-wwf/page-data.json>; rel=preload; as=fetch; crossorigin
 /wwf-sg-frontend/blog/christmas-gift-ideas-sustainable-2019/
-  Link: </wwf-sg-frontend/webpack-runtime-65899f1616f8bb483e01.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/styles-2d0a22bd4da087a53e55.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/commons-801faf18017b1afaf73c.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/app-3e11c7ba20bb4745fc7f.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/component---src-templates-post-js-1fe8cdad5af83f4cf863.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/webpack-runtime-ca27ddf9f92f9a21d84a.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/styles-9cebf7739e57f002ca8b.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/commons-414ab4404d05d802e15c.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/app-9ee95e6f8f5760e9e2e9.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/component---src-templates-post-js-a058b0a00198a57a2562.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </wwf-sg-frontend/page-data/blog/christmas-gift-ideas-sustainable-2019/page-data.json>; rel=preload; as=fetch; crossorigin
 /wwf-sg-frontend/blog/plastic-pollution-ocean-beach-clean-up/
-  Link: </wwf-sg-frontend/webpack-runtime-65899f1616f8bb483e01.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/styles-2d0a22bd4da087a53e55.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/commons-801faf18017b1afaf73c.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/app-3e11c7ba20bb4745fc7f.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/component---src-templates-post-js-1fe8cdad5af83f4cf863.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/webpack-runtime-ca27ddf9f92f9a21d84a.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/styles-9cebf7739e57f002ca8b.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/commons-414ab4404d05d802e15c.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/app-9ee95e6f8f5760e9e2e9.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/component---src-templates-post-js-a058b0a00198a57a2562.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </wwf-sg-frontend/page-data/blog/plastic-pollution-ocean-beach-clean-up/page-data.json>; rel=preload; as=fetch; crossorigin
 /wwf-sg-frontend/blog/food-security-singapore-climate-crisis/
-  Link: </wwf-sg-frontend/webpack-runtime-65899f1616f8bb483e01.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/styles-2d0a22bd4da087a53e55.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/commons-801faf18017b1afaf73c.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/app-3e11c7ba20bb4745fc7f.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/component---src-templates-post-js-1fe8cdad5af83f4cf863.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/webpack-runtime-ca27ddf9f92f9a21d84a.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/styles-9cebf7739e57f002ca8b.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/commons-414ab4404d05d802e15c.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/app-9ee95e6f8f5760e9e2e9.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/component---src-templates-post-js-a058b0a00198a57a2562.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </wwf-sg-frontend/page-data/blog/food-security-singapore-climate-crisis/page-data.json>; rel=preload; as=fetch; crossorigin
 /wwf-sg-frontend/blog/haze-singapore-today-riau-forest-fires/
-  Link: </wwf-sg-frontend/webpack-runtime-65899f1616f8bb483e01.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/styles-2d0a22bd4da087a53e55.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/commons-801faf18017b1afaf73c.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/app-3e11c7ba20bb4745fc7f.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/component---src-templates-post-js-1fe8cdad5af83f4cf863.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/webpack-runtime-ca27ddf9f92f9a21d84a.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/styles-9cebf7739e57f002ca8b.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/commons-414ab4404d05d802e15c.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/app-9ee95e6f8f5760e9e2e9.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/component---src-templates-post-js-a058b0a00198a57a2562.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </wwf-sg-frontend/page-data/blog/haze-singapore-today-riau-forest-fires/page-data.json>; rel=preload; as=fetch; crossorigin
 /wwf-sg-frontend/blog/forest-fire-amazon-indonesia-emergency/
-  Link: </wwf-sg-frontend/webpack-runtime-65899f1616f8bb483e01.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/styles-2d0a22bd4da087a53e55.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/commons-801faf18017b1afaf73c.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/app-3e11c7ba20bb4745fc7f.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/component---src-templates-post-js-1fe8cdad5af83f4cf863.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/webpack-runtime-ca27ddf9f92f9a21d84a.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/styles-9cebf7739e57f002ca8b.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/commons-414ab4404d05d802e15c.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/app-9ee95e6f8f5760e9e2e9.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/component---src-templates-post-js-a058b0a00198a57a2562.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </wwf-sg-frontend/page-data/blog/forest-fire-amazon-indonesia-emergency/page-data.json>; rel=preload; as=fetch; crossorigin
 /wwf-sg-frontend/blog/forest-fire-timeline-riau-tesso-nilo/
-  Link: </wwf-sg-frontend/webpack-runtime-65899f1616f8bb483e01.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/styles-2d0a22bd4da087a53e55.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/commons-801faf18017b1afaf73c.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/app-3e11c7ba20bb4745fc7f.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/component---src-templates-post-js-1fe8cdad5af83f4cf863.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/webpack-runtime-ca27ddf9f92f9a21d84a.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/styles-9cebf7739e57f002ca8b.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/commons-414ab4404d05d802e15c.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/app-9ee95e6f8f5760e9e2e9.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/component---src-templates-post-js-a058b0a00198a57a2562.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </wwf-sg-frontend/page-data/blog/forest-fire-timeline-riau-tesso-nilo/page-data.json>; rel=preload; as=fetch; crossorigin
 /wwf-sg-frontend/blog/ivory-lane-ban-singapore-wildlife-trade/
-  Link: </wwf-sg-frontend/webpack-runtime-65899f1616f8bb483e01.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/styles-2d0a22bd4da087a53e55.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/commons-801faf18017b1afaf73c.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/app-3e11c7ba20bb4745fc7f.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/component---src-templates-post-js-1fe8cdad5af83f4cf863.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/webpack-runtime-ca27ddf9f92f9a21d84a.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/styles-9cebf7739e57f002ca8b.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/commons-414ab4404d05d802e15c.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/app-9ee95e6f8f5760e9e2e9.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/component---src-templates-post-js-a058b0a00198a57a2562.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </wwf-sg-frontend/page-data/blog/ivory-lane-ban-singapore-wildlife-trade/page-data.json>; rel=preload; as=fetch; crossorigin
 /wwf-sg-frontend/blog/asian-elephant-thai-farmers-conflict/
-  Link: </wwf-sg-frontend/webpack-runtime-65899f1616f8bb483e01.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/styles-2d0a22bd4da087a53e55.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/commons-801faf18017b1afaf73c.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/app-3e11c7ba20bb4745fc7f.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/component---src-templates-post-js-1fe8cdad5af83f4cf863.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/webpack-runtime-ca27ddf9f92f9a21d84a.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/styles-9cebf7739e57f002ca8b.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/commons-414ab4404d05d802e15c.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/app-9ee95e6f8f5760e9e2e9.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/component---src-templates-post-js-a058b0a00198a57a2562.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </wwf-sg-frontend/page-data/blog/asian-elephant-thai-farmers-conflict/page-data.json>; rel=preload; as=fetch; crossorigin
 /wwf-sg-frontend/404/
-  Link: </wwf-sg-frontend/webpack-runtime-65899f1616f8bb483e01.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/styles-2d0a22bd4da087a53e55.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/commons-801faf18017b1afaf73c.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/app-3e11c7ba20bb4745fc7f.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/styles-2d0a22bd4da087a53e55.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/commons-801faf18017b1afaf73c.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/component---src-pages-404-js-de5284666524cb5798f1.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/webpack-runtime-ca27ddf9f92f9a21d84a.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/styles-9cebf7739e57f002ca8b.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/commons-414ab4404d05d802e15c.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/app-9ee95e6f8f5760e9e2e9.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/commons-414ab4404d05d802e15c.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/component---src-pages-404-tsx-bd1932b35c1d7ed26571.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </wwf-sg-frontend/page-data/404/page-data.json>; rel=preload; as=fetch; crossorigin
 /wwf-sg-frontend/
-  Link: </wwf-sg-frontend/webpack-runtime-65899f1616f8bb483e01.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/styles-2d0a22bd4da087a53e55.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/commons-801faf18017b1afaf73c.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/app-3e11c7ba20bb4745fc7f.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/styles-2d0a22bd4da087a53e55.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/commons-801faf18017b1afaf73c.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/component---src-pages-index-js-ff5af21367c35db4a469.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/webpack-runtime-ca27ddf9f92f9a21d84a.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/styles-9cebf7739e57f002ca8b.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/commons-414ab4404d05d802e15c.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/app-9ee95e6f8f5760e9e2e9.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/commons-414ab4404d05d802e15c.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/component---src-pages-index-tsx-1960010fe9bb15efa4da.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </wwf-sg-frontend/page-data/index/page-data.json>; rel=preload; as=fetch; crossorigin
 /wwf-sg-frontend/404.html
-  Link: </wwf-sg-frontend/webpack-runtime-65899f1616f8bb483e01.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/styles-2d0a22bd4da087a53e55.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/commons-801faf18017b1afaf73c.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/app-3e11c7ba20bb4745fc7f.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/styles-2d0a22bd4da087a53e55.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/commons-801faf18017b1afaf73c.js>; rel=preload; as=script
-  Link: </wwf-sg-frontend/component---src-pages-404-js-de5284666524cb5798f1.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/webpack-runtime-ca27ddf9f92f9a21d84a.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/styles-9cebf7739e57f002ca8b.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/commons-414ab4404d05d802e15c.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/app-9ee95e6f8f5760e9e2e9.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/commons-414ab4404d05d802e15c.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/component---src-pages-404-tsx-bd1932b35c1d7ed26571.js>; rel=preload; as=script
+  Link: </wwf-sg-frontend/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </wwf-sg-frontend/page-data/404.html/page-data.json>; rel=preload; as=fetch; crossorigin

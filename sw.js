@@ -27,37 +27,34 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-65899f1616f8bb483e01.js"
+    "url": "webpack-runtime-ca27ddf9f92f9a21d84a.js"
   },
   {
-    "url": "styles.142aaa5baf38403963f5.css"
+    "url": "styles.bfb30b33f4aedaa4824c.css"
   },
   {
-    "url": "styles-2d0a22bd4da087a53e55.js"
+    "url": "styles-9cebf7739e57f002ca8b.js"
   },
   {
-    "url": "commons-801faf18017b1afaf73c.js"
+    "url": "commons-414ab4404d05d802e15c.js"
   },
   {
-    "url": "app-3e11c7ba20bb4745fc7f.js"
-  },
-  {
-    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-bb5433fc5c978771af2b.js"
+    "url": "app-9ee95e6f8f5760e9e2e9.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "44ac05e7b08c6c886e3d9f1a87553b31"
+    "revision": "5029cdedd1950b5a5b918e680179efe5"
+  },
+  {
+    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-2ff006ca365609437d6c.js"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "d274adf0f008ef152ce70a312b04b730"
+    "revision": "43232b01cc861c0701a3ece4bd67720b"
   },
   {
-    "url": "component---src-pages-index-js-ff5af21367c35db4a469.js"
-  },
-  {
-    "url": "page-data/index/page-data.json",
-    "revision": "afe1406463a0178127280b6085ae75fa"
+    "url": "page-data/app-data.json",
+    "revision": "603c3407208ec506ce317171aa343947"
   },
   {
     "url": "manifest.json",
@@ -65,7 +62,7 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "5b3f3e31950dae3ffc2dc5a4bcd80463"
+    "revision": "79b44eafff36e868046055e7245f26c3"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -158,7 +155,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/wwf-sg-frontend/app-3e11c7ba20bb4745fc7f.js`))) {
+  if (!resources || !(await caches.match(`/wwf-sg-frontend/app-9ee95e6f8f5760e9e2e9.js`))) {
     return await fetch(event.request)
   }
 
