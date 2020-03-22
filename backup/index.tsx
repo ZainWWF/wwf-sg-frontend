@@ -1,18 +1,59 @@
 import React from "react"
-import Search from "./Search"
-import HeaderMenu from "./HeaderMenu"
-import wwfLogo from "../../images/wwf-sg-logo.png"
+import styled, { StyledComponent } from 'styled-components'
+import { Link } from "gatsby"
 
-import SHstyle from "./style.module.scss"
+// import Search from "./Search"
+// import HeaderMenu from "./HeaderMenu"
+// import wwfLogo from "../../images/wwf-sg-logo.png"
 
+// import * as SHstyle from "./style.module.scss"
+
+// const StyledLink: StyledComponent<typeof Link, any, {
+// 	titlebordercolor: string,
+// 	titlecolor: string,
+// 	titlefont: string,
+// 	titlefontsize: string
+// }, never>
+const StyledLink	= styled(Link)`
+	
+	position: relative;
+    margin-left: 0;
+    vertical-align: super;
+		margin-top: -28px;
+		
+		@media (min-width: 768px) {
+      margin-top: -24px;
+    }
+		@media (min-width: 992px){
+      margin-top: -12px;
+    }
+	`
 const SiteHeader = () => {
 	return (
 		<header
 			id="siteHeader"
-			className={`site-header fixed-top ${SHstyle.siteHeader}`}
+			className="site-header fixed-top"
 		>
 			<div className="container-lg px-0 px-lg-3">
 				<nav className="navbar navbar-expand-lg navbar-dark p-0">
+<StyledLink to="/">
+
+</StyledLink>
+
+</header >)}
+
+{/* const SiteHeader = () => {
+	return (
+		<header
+			id="siteHeader"
+			className="site-header fixed-top"
+		>
+			<div className="container-lg px-0 px-lg-3">
+				<nav className="navbar navbar-expand-lg navbar-dark p-0">
+<StyledLink to="/">
+
+</StyledLink>
+					
 					<a
 						className={`navbar-brand p-0 pl-2 pl-lg-0 ${SHstyle.navbarBrand}`}
 						href="/"
@@ -52,7 +93,7 @@ const SiteHeader = () => {
 						</button>
 					</div>
 
-					<div
+					{/* <div
 						className={`collapse navbar-collapse ml-lg-4 py-lg-4 ${SHstyle.navbarCollapse}`}
 						id="headerNavbarCollapse"
 					>
@@ -104,22 +145,11 @@ const SiteHeader = () => {
 								</a>
 							</li>
 
-							{/* 
-              <li
-                className="nav-item nav-icon dropdown"
-                id="showRegionSelector"
-              >
-                <a href="/" className="nav-link">
-                  <i className="fas fa-globe fa-fw"></i>
-                  <span className="d-md-none">WWF Locations</span>
-                </a>
-              </li>
-              */}
 						</ul>
-					</div>
+					</div> */}
 				</nav>
 			</div>
-			<div className="collapse" id="headerSearchbarCollapse">
+			{/* <div className="collapse" id="headerSearchbarCollapse">
 				<div
 					className="d-none d-lg-block"
 					style={{ backgroundColor: "#f4f2f2" }}
@@ -127,10 +157,10 @@ const SiteHeader = () => {
 					<div className="container px-5 py-2">
 						<Search />
 					</div>
-				</div>
+				</div> */}
 			</div>
-		</header>
+		</header >
 	)
 }
 
-export default SiteHeader
+export default SiteHeader */}

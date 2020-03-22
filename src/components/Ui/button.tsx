@@ -76,8 +76,8 @@ const Button = React.forwardRef(
   }
 )
 
-Button.displayName = "Button"
-Button.propTypes = propTypes
-Button.defaultProps = defaultProps
+// Button.displayName = "Button"
+// Button.propTypes = propTypes
+// Button.defaultProps = defaultProps
 
 export default Button
