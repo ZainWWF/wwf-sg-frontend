@@ -4,7 +4,7 @@ import SiteLayout from "../components/site-layout"
 
 import HeroSection from "../components/Sections/HeroSection"
 // import SetOfFourSection from "../components/Sections/SetOfFourSection"
-// import EarthSection from "../components/Sections/EarthSection"
+import EarthSection from "../components/Sections/EarthSection"
 // import RecentPostsWidget from "../components/Widgets/RecentPostsWidget"
 
 
@@ -19,6 +19,7 @@ export default function({ location }:Props)  {
 	return (
 		<SiteLayout location={location}>
 						<HeroSection />
+						<EarthSection />
 			{/* <Seo title="Home Page"/>
 			<HeroSection />
 			<EarthSection />
