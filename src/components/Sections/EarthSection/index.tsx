@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby";
+import styled from 'styled-components'
 import Img from "gatsby-image"
-// import EarthSectionStyles from "./style.module.scss"
 //@ts-ignore
 import downArrowImg from "../../../images/down-arrow.png"
 
@@ -45,78 +45,48 @@ query {
 `;
 
 
-const EarthSection = () => {
+const StyledSection = styled.section`
+	background-color: #fff;
+`;
+
+export default function () {
 
 	const { wpgraphql: { pages: { edges } } } = useStaticQuery(query)
 	const [{ node: page }] = edges
 
 
-  return (
-    <section className="wwf-sg-section">
-      <div className="wwf-sg-container container">
-        <div className="wwf-sg-row row">
-          <div className="wwf-sg-column col-6 col-lg">
-						<Img 
-						className="w-100 p-lg-4"
-						fluid={page.acfEarthSection.earthImage.imageFile.childImageSharp.fluid}  />
-          </div>
-          <div className="wwf-sg-column col-6 col-lg-4 d-flex align-items-center">
-            <div className="text-right">
-              <h2 className="">
-                {page.acfEarthSection.earthHeadline}
-              </h2>
-              <a
-                className=""
-                href="/"
-              >
-                <img
-                  className=""
+	return (
+		<StyledSection className="wwf-sg-section" >
+			<div className="wwf-sg-container container">
+				<div className="wwf-sg-row row">
+					<div className="wwf-sg-column col-6 col-lg">
+						<Img
+							className="w-100 p-lg-4"
+							fluid={page.acfEarthSection.earthImage.imageFile.childImageSharp.fluid} />
+					</div>
+					<div className="wwf-sg-column col-6 col-lg-4 d-flex align-items-center">
+						<div className="text-right">
+							<h2 className="">
+								{page.acfEarthSection.earthHeadline}
+							</h2>
+							<a
+								className=""
+								href="/"
+							>
+								<img
+									className=""
 									src={downArrowImg}
 									alt="down-arrow"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+								/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 
-      <div className="wwf-sg-section-bg-popover"></div>
-    </section>
-  )
+			<div className="wwf-sg-section-bg-popover"></div>
+		</StyledSection>
+	)
 
-
-  // return (
-  //   <section className={`wwf-sg-section ${EarthSectionStyles.section}`}>
-  //     <div className="wwf-sg-container container">
-  //       <div className="wwf-sg-row row">
-  //         <div className="wwf-sg-column col-6 col-lg">
-	// 					<Img 
-	// 					className={`w-100 p-lg-4 ${EarthSectionStyles.img} `}
-	// 					fluid={page.acfEarthSection.earthImage.imageFile.childImageSharp.fluid}  />
-  //         </div>
-  //         <div className="wwf-sg-column col-6 col-lg-4 d-flex align-items-center">
-  //           <div className="text-right">
-  //             <h2 className={`${EarthSectionStyles.title}`}>
-  //               {page.acfEarthSection.earthHeadline}
-  //             </h2>
-  //             <a
-  //               className={`${EarthSectionStyles.iconButton}`}
-  //               href="/"
-  //             >
-  //               <img
-  //                 className={`${EarthSectionStyles.icon}`}
-	// 								src={downArrowImg}
-	// 								alt="down-arrow"
-  //               />
-  //             </a>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     </div>
-
-  //     <div className="wwf-sg-section-bg-popover"></div>
-  //   </section>
-  // )
 }
 
-export default EarthSection
