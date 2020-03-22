@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 
-import SiteHeader from "./SiteHeader"
+import SiteHeader from "../SiteHeader"
 // import SiteFooter from "./SiteFooter"
 
 

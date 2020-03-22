@@ -1,11 +1,11 @@
 import React from "react"
-import SiteLayout from "../components/site-layout"
+import SiteLayout from "../components/SiteLayout"
 // import Seo from "../components/Seo"
 
 import HeroSection from "../components/Sections/HeroSection"
 import SetOfFourSection from "../components/Sections/SetOfFourSection"
 import EarthSection from "../components/Sections/EarthSection"
-// import RecentPostsWidget from "../components/Widgets/RecentPostsWidget"
+import RecentPosts from "../components/Sections/RecentPosts"
 
 
 
@@ -21,11 +21,9 @@ export default function({ location }:Props)  {
 						<HeroSection />
 						<EarthSection />
 						<SetOfFourSection />
+						<RecentPosts /> 
 			{/* <Seo title="Home Page"/>
-			<HeroSection />
-			<EarthSection />
-			<SetOfFourSection />
-			<RecentPostsWidget /> */}
+			<RecentPosts /> */}
 		</SiteLayout>
 	)
 }
