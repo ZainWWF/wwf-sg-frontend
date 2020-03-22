@@ -1,12 +1,11 @@
 import React from "react"
 import styled  from 'styled-components'
-
+import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image"
-import * as Button from "../../Ui/button"
 //@ts-ignore
 import { Wave }  from "../../../utils/svg-icons"
-// import HeroSectionStyles from "./style.module.scss"
+
 
 export const query = graphql`
 
@@ -49,6 +48,13 @@ query {
  
 `;
 
+
+const StyledLink = styled(Link)`	
+	position: relative;
+	margin-left: 0;
+	vertical-align: super;
+	
+`
 
 const StyledHeroSection =  styled.section`
   height: 500px;
@@ -110,48 +116,16 @@ export default function(){
 						<p className="">
 							{page.acfHeroSection.heroHeadlineParagraph}
 						</p>
-						{/* <btn className="btn-outline-secondary btn-lg">
+						<StyledLink
+							className="btn btn-outline-secondary btn-lg"
+							to="/">
 							{page.acfHeroSection.heroCallToAction}
-						</btn> */}
+						</StyledLink>
 					</div>
 				</div>
 			</div>
 		</StyledHeroSection>
 	)
-
-	// return (
-	// 	<section
-	// 		className={`wwf-sg-section d-flex align-items-center ${HeroSectionStyles.section}`}
-	// 	>
-	// 		<div className="wwf-sg-section-bg">
-	// 			<Img fluid={page.acfHeroSection.heroImage.imageFile.childImageSharp.fluid} className={HeroSectionStyles.heroImage} />
-	// 		</div>
-
-	// 		<div className="wwf-sg-section-bg-overlay"></div>
-
-	// 		<div className="wwf-sg-section-divider wwf-sg-section-divider-top"></div>
-
-	// 		<div className="wwf-sg-section-divider wwf-sg-section-divider-bottom">
-	// 			<Wave />
-	// 		</div>
-
-	// 		<div className="wwf-sg-container container">
-	// 			<div className="wwf-sg-row row align-items-start">
-	// 				<div className="wwf-sg-column col-10 offset-1 col-md-5 col-lg-6 offset-lg-0 text-center text-md-left">
-	// 					<h2 className={`${HeroSectionStyles.title}`}>
-	// 						{page.acfHeroSection.heroHeadline}
-	// 					</h2>
-	// 					<p className={`${HeroSectionStyles.heroHeadlineParagraph}`}>
-	// 						{page.acfHeroSection.heroHeadline}
-	// 					</p>
-	// 					<Button className={`btn-outline-secondary btn-lg ${HeroSectionStyles.button}`}>
-	// 						{page.acfHeroSection.heroCallToAction}
-	// 					</Button>
-	// 				</div>
-	// 			</div>
-	// 		</div>
-	// 	</section>
-	// )
 }
 
 
