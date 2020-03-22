@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from 'styled-components'
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image"
-// import { createLocalLink } from "../../../utils"
+//@ts-ignore
 import { Wave } from "../../../utils/svg-icons"
-
-import SetOfFourSectionStyles from "./style.module.scss"
+import { device } from "../../../utils"
 
 export const query = graphql`
 
@@ -52,10 +52,34 @@ fragment AcfImage on WPGraphQL_MediaItem {
       }
     }
   }
-}
- 
+} 
 `;
 
+const StyledSection = styled.section`
+  background-color: #f4f2f2;
+	padding-top: 6rem;
+	@media ${device.tablet}{
+		padding-top: 12rem;
+	};
+
+	@media ${device.laptop}{
+		padding-top: 24rem;
+  };
+`
+
+const StyledH2 = styled.h2`
+  font-size: 32px;
+  line-height: 0.88;
+  margin-bottom: 24px;
+
+	@media ${device.laptop}{
+    max-width: 788px;
+    font-size: 60px;
+    line-height: 0.83;
+    margin: auto;
+    margin-bottom: 48px;
+  }
+`
 
 const SetOfFourSection = () => {
 
@@ -63,7 +87,7 @@ const SetOfFourSection = () => {
 	const [{ node: page }] = edges
 
 	return (
-		<section className={`wwf-sg-section ${SetOfFourSectionStyles.section}`}>
+		<StyledSection className="wwf-sg-section">
 			<div className="wwf-sg-section-divider wwf-sg-section-divider-top">
 				<Wave className="" fill="#fff" />
 			</div>
@@ -71,9 +95,9 @@ const SetOfFourSection = () => {
 			<div className="wwf-sg-container container">
 				<div className="wwf-sg-row row">
 					<div className="wwf-sg-column col">
-						<h2 className={`text-md-center ${SetOfFourSectionStyles.title}`}>
+						<StyledH2 className="text-md-center">
 							{page.acfSetOfFourSection.setOfFourHeadline}
-						</h2>
+						</StyledH2>
 					</div>
 				</div>
 
@@ -110,7 +134,7 @@ const SetOfFourSection = () => {
 			</div>
 
 			<div className="wwf-sg-section-bg-popover"></div>
-		</section >
+		</StyledSection >
 	)
 }
 
