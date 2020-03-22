@@ -1,7 +1,7 @@
 import React from "react"
 import styled from 'styled-components'
 import { Link } from "gatsby"
-
+import { device } from "../../utils"
 //@ts-ignore
 import wwfLogo from "../../images/wwf-sg-logo.png"
 
@@ -30,6 +30,9 @@ const StyledImage = styled.img`
 	}
 	@media (min-width: 992px){
 		height: auto;
+	}
+	@media ${device.mobileS}{
+		margin: 0 5px;
 	}
 `
 
