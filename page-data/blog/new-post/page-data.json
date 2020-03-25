@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-post-tsx","path":"/blog/new-post/","result":{"data":{"wpgraphql":{"posts":{"edges":[{"node":{"id":"cG9zdDo1Nzgz","databaseId":5783,"title":"New Post","content":null}}]}}},"pageContext":{"id":"cG9zdDo1Nzgz","databaseId":5783,"uri":"new-post/","postId":5783,"title":"New Post"}}}
