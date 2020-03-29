@@ -1,5 +1,10 @@
 const path = require(`path`)
 
+
+
+
+
+
 module.exports = async ({ actions, graphql }) => {
   const GET_HOMEPAGE = `
   query GET_HOMEPAGE {

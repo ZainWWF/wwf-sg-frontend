@@ -1,9 +1,9 @@
 import React from "react"
-import FooterMenu from "./FooterMenu"
-
+import FooterMenu from "./footer-menu"
+//@ts-ignore
 import { Wave } from "../../utils/svg-icons"
 
-const SiteFooter = ({ location }) => (
+const SiteFooter = () => (
   <>
     <footer className="wwf-sg-section site-footer pb-4">
       <div className="wwf-sg-section-divider wwf-sg-section-divider-top">
@@ -112,7 +112,7 @@ const SiteFooter = ({ location }) => (
           <div className="col-3 col-md-2">
             <img
               className="logo-footer w-100"
-              src="//d1diae5goewto1.cloudfront.net/_skins/yangon/img/logo.png"
+							src="/wwf-sg-logo.png"
               alt="WWF"
             />
           </div>
@@ -124,7 +124,7 @@ const SiteFooter = ({ location }) => (
         </div>
 
         <div className="row mb-4">
-          <FooterMenu location={location} />
+          <FooterMenu/>
           <div className="col-12 mt-3">
             <hr />
           </div>

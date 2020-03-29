@@ -42,7 +42,8 @@ export default function () {
 		<StyledLink to="/">
 			<StyledImage
 				className="site-logo"
-				src={wwfLogo}
+				// src={wwfLogo}
+				src="/wwf-sg-logo.png"
 				alt="World Wide Fund Logo"
 			/>
 		</StyledLink>

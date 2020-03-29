@@ -3,5 +3,7 @@
 @font-face {
   font-family: "WWF";
   src: url("wwf-webfont.woff") format("woff"),
-    url("wwf-webfont.ttf"), url("wwf-webfont.eot");
+		url("wwf-webfont.ttf"), url("wwf-webfont.eot");
+	font-display: swap;
 }
+

@@ -7,21 +7,6 @@ import downArrowImg from "../../../images/down-arrow.png"
 
 export const query = graphql`
 
-fragment AcfImage on WPGraphQL_MediaItem {
-  
-  mediaItemUrl
-  sourceUrl
-  modified
-  databaseId
-  imageFile {
-    childImageSharp {
-      fluid {
-				...GatsbyImageSharpFluid
-      }
-    }
-  }
-}
-
 query {
   wpgraphql {
     pages(where: {title: "Home"}) {
@@ -33,7 +18,18 @@ query {
             earthHeadline
             earthCallToAction
 						earthImage {
-              ...AcfImage
+							mediaItemUrl
+							sourceUrl
+							modified
+							databaseId
+							imageFile {
+								childImageSharp {
+									fluid(maxWidth: 320, toFormat: WEBP){
+										...GatsbyImageSharpFluid
+									}
+								}
+							}
+							altText
             }
           }
         }
@@ -62,7 +58,10 @@ export default function () {
 					<div className="wwf-sg-column col-6 col-lg">
 						<Img
 							className="w-100 p-lg-4"
-							fluid={page.acfEarthSection.earthImage.imageFile.childImageSharp.fluid} />
+							fluid={page.acfEarthSection.earthImage.imageFile.childImageSharp.fluid}
+							alt={page.acfEarthSection.earthImage.altText}
+							/>
+							
 					</div>
 					<div className="wwf-sg-column col-6 col-lg-4 d-flex align-items-center">
 						<div className="text-right">

@@ -28,7 +28,7 @@ const MENU_QUERY = graphql`
   }
 `
 
-const renderMenuItem = menuItem => {
+const renderMenuItem = (menuItem:any) => {
   const link = createLocalLink(menuItem.url)
   if (menuItem.childItems && menuItem.childItems.nodes.length) {
     return renderSubMenu(menuItem)
@@ -55,7 +55,7 @@ const renderMenuItem = menuItem => {
   }
 }
 
-const renderSubMenu = menuItem => (
+const renderSubMenu = (menuItem:any) => (
   <div
     className="col-12 col-md-6 mb-md-4 mb-lg-0 col-lg-3"
     title={menuItem.label}
@@ -64,20 +64,20 @@ const renderSubMenu = menuItem => (
     <p className="font-weight-bold mb-2">{menuItem.label}</p>
     <nav className="d-none d-md-block" title={menuItem.label}>
       <ul className="list-unstyled nav flex-column">
-        {menuItem.childItems.nodes.map(item => renderMenuItem(item))}
+        {menuItem.childItems.nodes.map((item:any) => renderMenuItem(item))}
       </ul>
     </nav>
   </div>
 )
 
-const FooterMenu = ({ location }) => (
+const FooterMenu = () => (
   <StaticQuery
     query={MENU_QUERY}
     render={data => {
       if (data.wpgraphql.menuItems) {
         return (
           <Fragment>
-            {data.wpgraphql.menuItems.nodes.map(menuItem => {
+            {data.wpgraphql.menuItems.nodes.map((menuItem:any) => {
               if (menuItem.childItems.nodes.length) {
                 return renderSubMenu(menuItem)
               } else {

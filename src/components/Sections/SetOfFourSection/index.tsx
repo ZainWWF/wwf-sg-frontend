@@ -17,7 +17,7 @@ fragment AcfImage on WPGraphQL_MediaItem {
   databaseId
   imageFile {
     childImageSharp {
-      fluid {
+			fluid(maxWidth: 140, toFormat: WEBP){
 				...GatsbyImageSharpFluid
       }
     }
@@ -105,7 +105,7 @@ const SetOfFourSection = () => {
 					<div className="wwf-sg-column col">
 						<div className="row no-gutters">
 							<div className="col-6 col-md-3 p-3">
-								<Link to={page.acfSetOfFourSection.setOfFourSlug1}>
+								<Link to={`blog/${page.acfSetOfFourSection.setOfFourSlug1}`}>
 									<Img
 										fluid={page.acfSetOfFourSection.setOfFourImage1.imageFile.childImageSharp.fluid} />
 								</Link>

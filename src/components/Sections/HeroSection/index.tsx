@@ -9,21 +9,6 @@ import { Wave }  from "../../../utils/svg-icons"
 
 export const query = graphql`
 
-fragment AcfImage on WPGraphQL_MediaItem {
-  
-  mediaItemUrl
-  sourceUrl
-  modified
-  databaseId
-  imageFile {
-    childImageSharp {
-      fluid {
-				...GatsbyImageSharpFluid
-      }
-    }
-  }
-}
-
 query {
   wpgraphql {
     pages(where: {title: "Home"}) {
@@ -37,7 +22,18 @@ query {
             heroHeadline
             heroHeadlineParagraph
             heroImage {
-              ...AcfImage
+							mediaItemUrl
+							sourceUrl
+							modified
+							databaseId
+							imageFile {
+								childImageSharp {
+									fluid(maxWidth: 1024, toFormat: WEBP){
+										...GatsbyImageSharpFluid
+									}
+								}
+							}
+							altText
             }
           }
         }
@@ -96,7 +92,9 @@ export default function(){
 			className="wwf-sg-section d-flex align-items-center"
 		>
 			<div className="wwf-sg-section-bg">
-				<StyledImage fluid={page.acfHeroSection.heroImage.imageFile.childImageSharp.fluid}/>
+				<StyledImage 
+				fluid={page.acfHeroSection.heroImage.imageFile.childImageSharp.fluid} 
+				alt={page.acfHeroSection.heroImage.altText} />
 			</div>
 
 			<div className="wwf-sg-section-bg-overlay"></div>

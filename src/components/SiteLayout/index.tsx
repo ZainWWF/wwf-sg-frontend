@@ -5,42 +5,22 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { ReactNode } from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
-
+import React from "react"
 import SiteHeader from "../SiteHeader"
-// import SiteFooter from "./SiteFooter"
+import SiteFooter from "../SiteFooter"
+import { SEO, Props as SeoProps } from "../Seo"
 
-
-type Props = {
+interface Props extends SeoProps {
 	children: React.ReactNode,
-	location: string
 }
-export default function ({ children, location }: Props) {
-	const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+export default function ({ children, ...props }: Props) {
 	return (
-		<div>
-
-			<SiteHeader
-			// location={location}
-			// siteTitle={data.site.siteMetadata.title}
-			/>
-
+		<>
+			<SEO {...props} />
+			<SiteHeader />
 			<main>{children}</main>
-
-			{/* <SiteFooter location={location} /> */}
-		</div >
+			<SiteFooter />
+		</>
 	)
 }
 
