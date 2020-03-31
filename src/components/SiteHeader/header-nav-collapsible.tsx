@@ -1,27 +1,17 @@
 import React from "react"
 import styled from 'styled-components'
-import { Link } from "gatsby"
+
 import { device } from "../../utils"
 
 import HeaderNavCollapsibleMenu from "./header-nav-collapsible-menu"
 import HeaderNavCollpasibleSearch from "./header-nav-collapsible-search"
-import HeaderSearch from  "./header-search"
+import HeaderSearch from "./header-search"
+import HeaderNavBtn from "./header-nav-btn"
 
-const StyledLink = styled(Link)`
-	position: relative;
-	margin-left: 0;
-	vertical-align: super;		
-	border: 1px solid #ededed;
-	@media ${device.desktop} {
-		margin-top: -24px;
-	}
-	@media ${device.desktopL} {
-		margin-top: -12px;
-	}	
-`
 
 const StyledNavbar = styled.ul`
-	@media (max-width: 768px) {
+	padding: 0 0 0 79px;
+	@media ${device.upToTablet}{
     background-color: #fff;
     .nav-link {
       color: #000 !important;
@@ -33,32 +23,26 @@ const StyledNavbar = styled.ul`
 export default function () {
 	return (
 		<div
-			className="collapse navbar-collapse ml-lg-4 py-lg-4"
+			className="collapse navbar-collapse  py-lg-4"
 			id="headerNavbarCollapse"
 		>
 			<StyledNavbar className="navbar-nav mr-auto">
 				<li className="nav-item d-lg-none">
-					<HeaderSearch />		
+					<HeaderSearch />
 				</li>
 				<HeaderNavCollapsibleMenu />
 			</StyledNavbar>
-			<ul className="navbar-nav d-none d-lg-flex">
-				<li className="nav-item nav-button pt-2">
-					<StyledLink
-						className="btn btn-outline-secondary  "
-						to="/">
-						GET INVOLVED
-					</StyledLink>
+
+			<ul className="navbar-nav d-lg-none d-lg-flex py-3">
+				<li className="nav-item nav-button pt-2 mt-3">
+					<HeaderNavBtn label={"Get Involved"} link={"/"} />
 				</li>
-				<li className="nav-item nav-button ml-2 pt-2">
-					<Link
-						className="btn btn-outline-secondary"
-						to="/">
-						DONATE
-					</Link>
+
+				<li className="nav-item nav-button pt-2 mt-3">
+					<HeaderNavBtn label={"Donate"} link={"/"} />
 				</li>
-			<HeaderNavCollpasibleSearch/>
 			</ul>
+			<HeaderNavCollpasibleSearch />
 		</div>
 	)
 }

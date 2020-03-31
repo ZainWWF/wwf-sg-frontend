@@ -10,6 +10,7 @@ import styled from "styled-components"
 
 const StyledSiteLayout = styled(SiteLayout)`
 	background-color : black;
+	margin: 0 43px;
 `
 
 

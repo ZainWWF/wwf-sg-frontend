@@ -1,9 +1,11 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby";
 import styled from 'styled-components'
-import Img from "gatsby-image"
-//@ts-ignore
-import downArrowImg from "../../../images/down-arrow.png"
+
+import EarthImage from "./earth-image"
+import EarthHeadline from "./earth-headline"
+import EarthTopWave from "./earth-top-wave"
+import EarthBottomWave from "./earth-bottom-wave"
 
 export const query = graphql`
 
@@ -42,48 +44,42 @@ query {
 
 
 const StyledSection = styled.section`
-	background-color: #fff;
+	background-color: transparent;
+	margin:0;
+	padding:0;	
+	top: 0px;
+	position: relative;
+	z-index: 100;
+
 `;
+
+const StyledEarthSection = styled.section`
+    margin: auto;
+    padding: 0;
+    background-color: white;
+		min-width: 100%;
+		max-height: 450px;
+`;
+
 
 export default function () {
 
 	const { wpgraphql: { pages: { edges } } } = useStaticQuery(query)
 	const [{ node: page }] = edges
 
-
 	return (
-		<StyledSection className="wwf-sg-section" >
-			<div className="wwf-sg-container container">
-				<div className="wwf-sg-row row">
-					<div className="wwf-sg-column col-6 col-lg">
-						<Img
-							className="w-100 p-lg-4"
-							fluid={page.acfEarthSection.earthImage.imageFile.childImageSharp.fluid}
-							alt={page.acfEarthSection.earthImage.altText}
-							/>
-							
-					</div>
-					<div className="wwf-sg-column col-6 col-lg-4 d-flex align-items-center">
-						<div className="text-right">
-							<h2 className="">
-								{page.acfEarthSection.earthHeadline}
-							</h2>
-							<a
-								className=""
-								href="/"
-							>
-								<img
-									className=""
-									src={downArrowImg}
-									alt="down-arrow"
-								/>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div className="wwf-sg-section-bg-popover"></div>
+		<StyledSection className="container-fluid" >
+			<EarthTopWave />
+			<StyledEarthSection className="row container-lg" >
+				<EarthImage
+					earthImage={page.acfEarthSection.earthImage.imageFile.childImageSharp.fluid}
+					altText={page.acfEarthSection.earthImage.altText}
+				/>
+				<EarthHeadline
+					headline={page.acfEarthSection.earthHeadline}
+				/>
+			</StyledEarthSection>
+			<EarthBottomWave/>
 		</StyledSection>
 	)
 

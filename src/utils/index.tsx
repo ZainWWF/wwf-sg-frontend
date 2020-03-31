@@ -26,5 +26,26 @@ export const device = {
   laptop: `(min-width: ${size.laptop})`,
   laptopL: `(min-width: ${size.laptopL})`,
   desktop: `(min-width: ${size.desktop})`,
-  desktopL: `(min-width: ${size.desktop})`
+	desktopL: `(min-width: ${size.desktop})`,
+	
+
+  upToMobileS: `(max-width: ${size.mobileS})`,
+  upToMobileM: `(max-width: ${size.mobileM})`,
+  upToMobileL: `(max-width: ${size.mobileL})`,
+  upToTablet: `(max-width: ${size.tablet})`,
+  upToLaptop: `(max-width: ${size.laptop})`,
+  upToLaptopL: `(max-width: ${size.laptopL})`,
+  upToDesktop: `(max-width: ${size.desktop})`,
+  upToDesktopL: `(max-width: ${size.desktop})`,
+
+
+  upFromMobileS: `(min-width: ${size.mobileS})`,
+  upFromMobileM: `(min-width: ${size.mobileM})`,
+  upFromMobileL: `(min-width: ${size.mobileL})`,
+  upFromTablet: `(min-width: ${size.tablet})`,
+  upFromLaptop: `(min-width: ${size.laptop})`,
+  upFromLaptopL: `(min-width: ${size.laptopL})`,
+  upFromDesktop: `(min-width: ${size.desktop})`,
+	upFromDesktopL: `(min-width: ${size.desktop})`,
+
 };

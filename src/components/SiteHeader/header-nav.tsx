@@ -1,22 +1,12 @@
 import React from "react"
 import styled from 'styled-components'
-import { Link } from "gatsby"
 
-const StyledLink = styled(Link)`	
+import HeaderNavBtn from "./header-nav-btn"
+
+
+const HeaderToggleNavButton = styled.button`
 	position: relative;
-	margin-left: 0;
-	vertical-align: super;
-	margin-top: -28px;
-	
-	@media (min-width: 768px) {
-		margin-top: -24px;
-	}
-	@media (min-width: 992px){
-		margin-top: -12px;
-	}
-`
-
-const StyledButton = styled.button`
+	top: 3px;
 	margin: 0 12px;
   border: 0;
   &:focus {
@@ -33,17 +23,10 @@ const StyledSpan = styled.span`
 export default function () {
 	return (
 		<div className="d-lg-none py-3">
-			<StyledLink
-				className="btn btn-outline-secondary btn-sm mr-2"
-				to="/">
-				GET INVOLVED
-			</StyledLink>
-			<StyledLink
-				className="btn btn-outline-secondary btn-sm"
-				to="/">
-				DONATE
-			</StyledLink>
-			<StyledButton
+			<HeaderNavBtn label={"Get Involved"} link={"/"} small />
+			<HeaderNavBtn label={"Donate"} link={"/"}  small/>
+
+			<HeaderToggleNavButton
 				className="navbar-toggler"
 				type="button"
 				data-toggle="collapse"
@@ -55,7 +38,7 @@ export default function () {
 				<StyledSpan
 					className="navbar-toggler-icon"
 				></StyledSpan>
-			</StyledButton>
+			</HeaderToggleNavButton>
 		</div>
 	)
 }

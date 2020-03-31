@@ -1,15 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from 'styled-components'
 import { graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image"
-//@ts-ignore
-import { Wave } from "../../../utils/svg-icons"
 import { device } from "../../../utils"
+import SetOfFourHeadline from "./set-of-four-headline"
+import SetOfFourImage from "./set-of-four-image"
 
 export const query = graphql`
 
-fragment AcfImage on WPGraphQL_MediaItem {
+fragment SetOfFourImage on WPGraphQL_MediaItem {
   
   mediaItemUrl
   sourceUrl
@@ -32,16 +30,16 @@ fragment AcfImage on WPGraphQL_MediaItem {
           acfSetOfFourSection {
             setOfFourHeadline
             setOfFourImage1{
-              ...AcfImage
+              ...SetOfFourImage
             }
             setOfFourImage2{
-              ...AcfImage
+              ...SetOfFourImage
             }
 						setOfFourImage3{
-              ...AcfImage
+              ...SetOfFourImage
             }
 						setOfFourImage4{
-              ...AcfImage
+              ...SetOfFourImage
             }
 						setOfFourSlug1
             setOfFourSlug2
@@ -56,29 +54,18 @@ fragment AcfImage on WPGraphQL_MediaItem {
 `;
 
 const StyledSection = styled.section`
+	max-width: 1440px;
+  position: relative;
   background-color: #f4f2f2;
-	padding-top: 6rem;
-	@media ${device.tablet}{
-		padding-top: 12rem;
-	};
+	padding-top: 40px;
+	margin-top: -2px;
+  margin-bottom: -1px;
 
-	@media ${device.laptop}{
-		padding-top: 24rem;
-  };
-`
 
-const StyledH2 = styled.h2`
-  font-size: 32px;
-  line-height: 0.88;
-  margin-bottom: 24px;
+	media ${device.upFromTablet}{
+		padding-top: 75px;
+	}
 
-	@media ${device.laptop}{
-    max-width: 788px;
-    font-size: 60px;
-    line-height: 0.83;
-    margin: auto;
-    margin-bottom: 48px;
-  }
 `
 
 const SetOfFourSection = () => {
@@ -87,53 +74,35 @@ const SetOfFourSection = () => {
 	const [{ node: page }] = edges
 
 	return (
-		<StyledSection className="wwf-sg-section">
-			<div className="wwf-sg-section-divider wwf-sg-section-divider-top">
-				<Wave className="" fill="#fff" />
-			</div>
-
-			<div className="wwf-sg-container container">
-				<div className="wwf-sg-row row">
-					<div className="wwf-sg-column col">
-						<StyledH2 className="text-md-center">
-							{page.acfSetOfFourSection.setOfFourHeadline}
-						</StyledH2>
-					</div>
-				</div>
-
-				<div className="wwf-sg-row row">
-					<div className="wwf-sg-column col">
+		<StyledSection>
+			<div className="container">
+				<SetOfFourHeadline
+					headline={page.acfSetOfFourSection.setOfFourHeadline}
+				/>
+				<div className="row">
+					<div className="col">
 						<div className="row no-gutters">
-							<div className="col-6 col-md-3 p-3">
-								<Link to={`blog/${page.acfSetOfFourSection.setOfFourSlug1}`}>
-									<Img
-										fluid={page.acfSetOfFourSection.setOfFourImage1.imageFile.childImageSharp.fluid} />
-								</Link>
-							</div>
-							<div className="col-6 col-md-3 p-3">
-								<Link to={page.acfSetOfFourSection.setOfFourSlug2}>
-									<Img
-										fluid={page.acfSetOfFourSection.setOfFourImage2.imageFile.childImageSharp.fluid} />
-								</Link>
-							</div>
-							<div className="col-6 col-md-3 p-3">
-								<Link to={page.acfSetOfFourSection.setOfFourSlug3}>
-									<Img
-										fluid={page.acfSetOfFourSection.setOfFourImage3.imageFile.childImageSharp.fluid} />
-								</Link>
-							</div>
-							<div className="col-6 col-md-3 p-3">
-								<Link to={page.acfSetOfFourSection.setOfFourSlug4}>
-									<Img
-										fluid={page.acfSetOfFourSection.setOfFourImage4.imageFile.childImageSharp.fluid} />
-								</Link>
-							</div>
+							<SetOfFourImage
+								setImage={page.acfSetOfFourSection.setOfFourImage1.imageFile.childImageSharp.fluid}
+								link={page.acfSetOfFourSection.setOfFourSlug1}
+							/>
+							<SetOfFourImage
+								setImage={page.acfSetOfFourSection.setOfFourImage2.imageFile.childImageSharp.fluid}
+								link={page.acfSetOfFourSection.setOfFourSlug2}
+							/>
+							<SetOfFourImage
+								setImage={page.acfSetOfFourSection.setOfFourImage3.imageFile.childImageSharp.fluid}
+								link={page.acfSetOfFourSection.setOfFourSlug3}
+							/>
+							<SetOfFourImage
+								setImage={page.acfSetOfFourSection.setOfFourImage4.imageFile.childImageSharp.fluid}
+								link={page.acfSetOfFourSection.setOfFourSlug4}
+							/>
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<div className="wwf-sg-section-bg-popover"></div>
+			{/* <div className="wwf-sg-section-bg-popover"></div> */}
 		</StyledSection >
 	)
 }

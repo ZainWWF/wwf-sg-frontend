@@ -1,11 +1,12 @@
 import React from "react"
-import styled  from 'styled-components'
-import { Link } from "gatsby"
+import styled from 'styled-components'
 import { graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image"
-//@ts-ignore
-import { Wave }  from "../../../utils/svg-icons"
 
+import HeroImage from "./hero-image"
+import HeroHeadline from "./hero-headline"
+import HeroParagraph from "./hero-paragraph"
+import HeroCta from "./hero-cta"
+import { device } from "../../../utils";
 
 export const query = graphql`
 
@@ -28,8 +29,10 @@ query {
 							databaseId
 							imageFile {
 								childImageSharp {
-									fluid(maxWidth: 1024, toFormat: WEBP){
+									# fluid( sizes:"(max-width: 1440px) 100vw, 1440px",  toFormat: WEBP){
+										fluid( toFormat: WEBP){	
 										...GatsbyImageSharpFluid
+										
 									}
 								}
 							}
@@ -44,84 +47,46 @@ query {
  
 `;
 
-
-const StyledLink = styled(Link)`	
-	position: relative;
-	margin-left: 0;
-	vertical-align: super;
-	
-`
-
-const StyledHeroSection =  styled.section`
-  height: 500px;
+const StyledHeroSection = styled.section`
+	height: 435px;
   color: #fff;
-  background-color: #fff;
-	@media (min-width: 992px) {
-    padding: 6rem 0 !important;
-    height: 850px;
-    min-height: 90vh;
-  }
+	padding: 0;
+
+	@media ${device.upFromLaptop} {
+    height: 678px;
+	}	
 	
 `
-const StyledTitle = styled.h2`
-  font-size: 32px;
-  line-height: 0.88;
-  margin-bottom: 24px;
 
-	@media (min-width: 992px) {
-    max-width: 788px;
-    font-size: 60px;
-    line-height: 0.83;
-    margin: auto;
-    margin-bottom: 1rem;
-  }
+const StyledHeroCopy = styled.div`
+	margin: auto;
+	padding: 0;
 `
-
-const StyledImage = styled(Img)`
-	height: 100%;
-`
-
-export default function(){
+export default function () {
 
 	const { wpgraphql: { pages: { edges } } } = useStaticQuery(query)
 	const [{ node: page }] = edges
 
-
 	return (
 		<StyledHeroSection
-			className="wwf-sg-section d-flex align-items-center"
+			className="d-flex align-items-center container-fluid"
 		>
-			<div className="wwf-sg-section-bg">
-				<StyledImage 
-				fluid={page.acfHeroSection.heroImage.imageFile.childImageSharp.fluid} 
-				alt={page.acfHeroSection.heroImage.altText} />
-			</div>
+			<HeroImage
+				heroImage={page.acfHeroSection.heroImage.imageFile.childImageSharp.fluid}
+				altText={page.acfHeroSection.heroImage.altText} />
 
-			<div className="wwf-sg-section-bg-overlay"></div>
-
-			<div className="wwf-sg-section-divider wwf-sg-section-divider-top"></div>
-
-			<div className="wwf-sg-section-divider wwf-sg-section-divider-bottom">
-				<Wave />
-			</div>
-
-			<div className="wwf-sg-container container">
-				<div className="wwf-sg-row row align-items-start">
-					<div className="wwf-sg-column col-10 offset-1 col-md-5 col-lg-6 offset-lg-0 text-center text-md-left">
-						<StyledTitle>
-							{page.acfHeroSection.heroHeadline}
-						</StyledTitle>
-						<p className="">
-							{page.acfHeroSection.heroHeadlineParagraph}
-						</p>
-						<StyledLink
-							className="btn btn-outline-secondary btn-lg"
-							to="/">
-							{page.acfHeroSection.heroCallToAction}
-						</StyledLink>
-					</div>
+			<StyledHeroCopy className="container-lg">
+				<div className="col-12 m-0 p-0">
+					<HeroHeadline
+						headline={page.acfHeroSection.heroHeadline}
+					/>
+					<HeroParagraph para={page.acfHeroSection.heroHeadlineParagraph} />
+					<HeroCta
+						link="/"
+						ctaText={page.acfHeroSection.heroCallToAction}
+					/>
 				</div>
-			</div>
+			</StyledHeroCopy>
 		</StyledHeroSection>
 	)
 }

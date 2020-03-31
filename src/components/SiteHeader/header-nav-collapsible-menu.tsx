@@ -7,7 +7,14 @@ import menuItems from "./menu-items.json"
 
 const StyledMenuList = styled.li`
 	border: 1px solid #ededed;
-	@media ${device.laptop}{
+
+	@media ${device.upFromTablet}{
+		padding-top: 23px;
+		border:0;
+	}
+
+	@media ${device.upFromLaptop}{
+		padding-top: 23px;
 		border:0;
 		&:hover {
 			.dropdown-menu {
@@ -27,19 +34,24 @@ const StyledMenuList = styled.li`
 	} 
 `
 
-const StyledDropDownMenu = styled.div`
-display: none;
+const StyledMenuNoList = styled.li`
+		padding-top: 15px;
+		border:0;
+`
+const StyledDropDownMenu = styled.div`	
+	display: none;
 	border: 1px solid #ededed;
 	min-width: 232px;
 
 	border-radius: 10;
 	margin-top: 0;
 
-	@media ${device.laptop} {
+	@media ${device.upFromLaptop} {
 		border:0;
 	}
 
-	@media (max-width: 768px) {
+	@media ${device.upFromTablet} { 
+		display: none;
 		border: 0;
 		background-color: #efefef;
 		padding: 15px 0;
@@ -51,19 +63,18 @@ display: none;
 `
 
 const StyledMenuLink = styled(Link)`
+		padding-top: 0px;
 	&:after {
     content: "+";
     border: 0;
     vertical-align: 0;
-		@media ${device.laptop} { 
-      display: none;
+		@media ${device.upFromLaptop} { 
+			display: none;
     }
-  }
+	}
 `
 
-
 const StyledDropDownLink = styled(Link)`
-
 	white-space: normal;
 	padding: 5px 14px;
 	font-size: 16px;
@@ -72,7 +83,6 @@ const StyledDropDownLink = styled(Link)`
 	&:hover {
 		background-color: white;
 	}
-
 `;
 
 export default function () {
@@ -131,7 +141,7 @@ export default function () {
 							</StyledDropDownMenu>
 						</StyledMenuList>
 						:
-						<li className="nav-item" key={menuItem.id}>
+						<StyledMenuNoList className="nav-item" key={menuItem.id}>
 							<Link
 								title={menuItem.label}
 								className="nav-link px-3 px-lg-0"
@@ -139,7 +149,7 @@ export default function () {
 							>
 								<div>{menuItem.label}</div>
 							</Link>
-						</li>
+						</StyledMenuNoList>
 				)
 			})
 			}

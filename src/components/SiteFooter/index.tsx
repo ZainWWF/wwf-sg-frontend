@@ -1,14 +1,11 @@
 import React from "react"
 import FooterMenu from "./footer-menu"
-//@ts-ignore
-import { Wave } from "../../utils/svg-icons"
+import FooterTopWave from "./footer-top-wave"
 
 const SiteFooter = () => (
-  <>
-    <footer className="wwf-sg-section site-footer pb-4">
-      <div className="wwf-sg-section-divider wwf-sg-section-divider-top">
-        <Wave fill="#f4f2f2" />
-      </div>
+
+    <footer className="site-footer pb-4">
+			<FooterTopWave/>
       <div className="container">
         <div className="row pt-5 mb-5">
           <div className="col-9 offset-1 col-md-5 offset-md-7 col-lg-4 offset-lg-8 col-xl-3 offset-xl-9">
@@ -141,7 +138,7 @@ const SiteFooter = () => (
         </div>
       </div>
     </footer>
-  </>
+  
 )
 
 export default SiteFooter
