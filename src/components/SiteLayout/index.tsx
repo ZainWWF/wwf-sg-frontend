@@ -13,6 +13,7 @@ import styled from "styled-components"
 
 interface Props extends SeoProps {
 	children: React.ReactNode,
+	headerColor: string
 }
 
 const StyledLayout = styled.div``
@@ -21,7 +22,7 @@ export default function ({ children, ...props }: Props) {
 	return (
 		<StyledLayout>
 			<SEO {...props} />
-			<SiteHeader />
+			<SiteHeader headerColor={props.headerColor}/>
 			<main>{children}</main>
 			<SiteFooter />
 		</StyledLayout>

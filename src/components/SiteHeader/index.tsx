@@ -29,15 +29,19 @@ const StyledNav = styled.nav`
 	@media ${device.upFromLaptopL}{
 		margin: auto
 	};
-
-
 `
 
-export default function () {
+type Props = {
+	headerColor: string
+}
+
+export default function ({headerColor = "transparent" }:Props) {
+	const style = headerColor === "transparent" ? {} :  {backgroundColor:headerColor}
 	return (
 		<header
 			id="siteHeader"
-			className="site-header fixed-top"
+			className="site-header fixed-top "
+			style = {style}
 		>
 			<StyledNavContainer className="container-fluid">
 			<StyledNav className="navbar navbar-expand-lg navbar-dark p-0 container-lg">				

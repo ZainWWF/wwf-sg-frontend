@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 
-export const StyledSection = styled.section`
+export const StyledWPPostSection = styled.section`
 /*
 Theme Name: Twenty Twenty
 Text Domain: twentytwenty
