@@ -48,10 +48,6 @@ const StyledSection = styled(StyledWPPostSection)`
 	margin: auto;
 	padding: 120px 18px;
 
-	/* @media ${device.upFromLaptop}{
-		padding: 240px 100px;
-	} */
-
 	@media ${device.upFromLaptop}{
 		padding: 240px 100px;
 	}
