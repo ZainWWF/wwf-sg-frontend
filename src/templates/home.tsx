@@ -9,7 +9,6 @@ import styled from "styled-components"
 
 
 const StyledSiteLayout = styled(SiteLayout)`
-	background-color : black;
 	margin: 0 43px;
 `
 
@@ -25,7 +24,7 @@ export default function(props: { data: { wpgraphql: { posts: { nodes: any } } } 
   // const currentPage = pageNumber ? `- Page ${pageNumber}` : ``
   return (
 
-		<StyledSiteLayout>
+		<StyledSiteLayout headerColor={""} >
 			<HeroSection />
 			<EarthSection />
 			<SetOfFourSection />
