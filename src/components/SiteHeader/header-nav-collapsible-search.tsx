@@ -14,13 +14,15 @@ const StyledListNavItem = styled.li`
 const StyledLink = styled(Link)`
 	position: relative;
 	margin-left: 0;
-	vertical-align: super;		
-	@media ${device.desktop} {
+	vertical-align: super;
+	top: 20px;
+  margin-left: 10px;		
+	/* @media ${device.desktop} {
 		margin-top: -24px;
 	}
 	@media ${device.desktopL} {
 		margin-top: -12px;
-	}	
+	}	 */
 `
 
 export default function () {

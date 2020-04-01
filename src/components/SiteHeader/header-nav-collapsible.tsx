@@ -41,8 +41,8 @@ export default function () {
 				<li className="nav-item nav-button pt-2 mt-3">
 					<HeaderNavBtn label={"Donate"} link={"/"} />
 				</li>
+				<HeaderNavCollpasibleSearch />
 			</ul>
-			<HeaderNavCollpasibleSearch />
 		</div>
 	)
 }
