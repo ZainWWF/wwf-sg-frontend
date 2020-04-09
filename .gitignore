@@ -68,3 +68,9 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+*.report.html
+
+# firebase
+*.cache
+.firebase/*.cache
+.firebase/hosting.*.cache

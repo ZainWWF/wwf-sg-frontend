@@ -2,6 +2,10 @@
 
 You can preview the website under development here - [https://wwf-sg-git-build.netlify.com/](https://wwf-sg-git-build.netlify.com/)
 
+reference
+https://github.com/zgordon/gatsby-wordpress-deploy
+
+
 ## 🚀 Development
 
 1. Clone the repo

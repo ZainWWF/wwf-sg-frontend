@@ -1,0 +1,9 @@
+@import url("'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap'");
+
+@font-face {
+  font-family: "WWF";
+  src: url("wwf-webfont.woff") format("woff"),
+		url("wwf-webfont.ttf"), url("wwf-webfont.eot");
+	font-display: swap;
+}
+

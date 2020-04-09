@@ -1,0 +1,44 @@
+[
+	{
+		"id": "Earth Hour 2020",
+		"label": "Earth Hour 2020",
+		"url": "/",
+		"childItems": null
+	},
+	{
+		"id": "Challenges",
+		"label": "Challenges",
+		"url": "/",
+		"childItems": [{
+			"id": 20,
+			"label": "Bring Wildlife Back",
+			"url": "/"
+		}, {
+			"id": 21,
+			"label": "Protect Food Sources",
+			"url": "/"
+		}, {
+			"id": 22,
+			"label": "Make Singapore Haze-Free",
+			"url": "/"
+		}, {
+			"id": 23,
+			"label": "Keep Plastic Out Of Nature",
+			"url": "/"
+		}]
+	},
+	{
+		"id": "About",
+		"label": "About",
+		"url": "/",
+		"childItems": [{
+			"id": 30,
+			"label": "About WWF",
+			"url": "/"
+		}, {
+			"id": 31,
+			"label": "Contact Us",
+			"url": "/"
+		}]
+	}
+]
